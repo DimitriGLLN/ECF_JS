@@ -1,0 +1,60 @@
+.overlap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.8);
+  
+}
+
+.overlap[hidden] {
+    display: none;
+}
+
+#modal {
+    position: relative;
+    min-width: 50%;
+    max-width: 90%;
+    min-height: 50%;
+    max-height: 90%;
+    padding: 12px;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-align: center;
+}
+#modal h2 {
+    margin-top: 0;
+}
+#modal > button:nth-child(3) {
+
+    border: .1rem solid whitesmoke;
+    border-radius: .3rem;
+    padding: auto;
+    }
+
+#modal > button:nth-child(3):hover {
+        background-color: black;
+        color: whitesmoke;
+
+        }
+#modal hr{
+    border: .1rem solid whitesmoke;
+    width: 100%;
+
+}
+.img-cover{
+    height: 32rem;
+    width: 32rem;
+    padding:2rem;
+    border-radius: 4rem;
+    margin-left:auto;
+    margin-right:auto;
+
+}

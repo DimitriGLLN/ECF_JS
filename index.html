@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="overlap" hidden>
+        <div id="modal">
+            <h2>Titre</h2>
+            <div class="modal-content">
+                <p>Content</p>
+            </div>
+            <button>Ok</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+
+
+            <a class="navbar-brand text-white" href="#">
+                My Music APP
+            </a>
+
+
+        </div>
+
+
+        <div class="row">
+            <div class="row g-3">
+                <div class="col-sm-6">
+
+                    <input class="form-control" id="search-input" name="content" rows="3" placeholder="Quoi de neuf ? ">
+                </div>
+                <div class="col-sm">
+                    <div class="col-auto">
+                        <label class="visually-hidden">type</label>
+                        <select class="form-select" id="type-search">
+                            <option value="everything" selected>Everything</option>
+                            <option value="artist">Artist</option>
+                            <option value="title">Title</option>
+                            <option value="album">Album</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" id="btn-search" class="btn btn-outline-primary">Search</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="search-result">
+            <table class="table table-dark table-hover" id=search-result-table>
+                <thead>
+                    <tr>
+                        <th id="tbl-head-1" scope="col">#</th>
+                        <th id="tbl-head-2" scope="col">Artist</th>
+                        <th id="tbl-head-3" scope="col">Title</th>
+                        <th id="tbl-head-4" scope="col">Album</th>
+                        <th id="tbl-head-5" scope="col">Action</th>
+
+                    </tr>
+                </thead>
+                <tbody id="result-zone">
+                    <tr>
+                        <td colspan="5" id="default-message-content" class="text-center">Entrez un élément de recherche
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+
+</body>
+
+
+</html>
