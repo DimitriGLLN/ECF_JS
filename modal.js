@@ -13,7 +13,7 @@ function hideModal() {
 }
 function setModalContent(title, callback) {
     modalTitle.textContent = title;
-    modalContent.innerHTML = "";
+    modalContent.innerHTML = ""
     callback(modalContent);
 }
 
